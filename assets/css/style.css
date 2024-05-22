@@ -1,0 +1,160 @@
+@import url(./root.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Fira+Sans+Extra+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Racing+Sans+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Fira+Sans+Extra+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Racing+Sans+One&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    text-decoration: none !important;
+    outline: none !important;
+    list-style: none !important;
+}
+
+.font-Poppins {
+    font-family: "Poppins", sans-serif;
+}
+
+.font-Raleway {
+    font-family: "Raleway", sans-serif;
+}
+
+.opacity-70 {
+    opacity: 70%;
+}
+
+.nav-heading {
+    transition: all 300ms linear;
+}
+
+.nav-heading:hover {
+    opacity: 100%;
+}
+
+.login-btn {
+    border: 1px solid var(--color-black2);
+    background: var(--color-Light-Green);
+    width: 140px;
+    height: 56px;
+    border-radius: 8px;
+    transition: all 300ms linear;
+}
+
+.z-10 {
+    z-index: 10;
+}
+
+.section-1 {
+    background-image: url(../image/png/hero-section-img.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section-1::after {
+    content: '';
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-image: url(../image/png/hero-section-layer.png);
+    opacity: 50%;
+}
+
+.max-w-495 {
+    max-width: 495px;
+}
+
+.mt-75 {
+    margin-top: 75px;
+}
+
+.slider-box {
+    box-shadow: 0px 2px 30px 0px var(--color-black1);
+    box-shadow: 0px 8px 0px 0px var(--color-black-secondary);
+    width: 267px;
+    height: 182px;
+    border-radius: 12px;
+    transition: all 300ms linear;
+}
+
+.slider-box:hover {
+    box-shadow: 4px 4px 20px 0px var(--color-black-secondary);
+}
+
+.slick-track {
+    display: flex !important;
+}
+
+.slick-slide {
+    height: inherit !important;
+    display: flex !important;
+    justify-content: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.slick-slide>div {
+    display: flex;
+    width: 267px;
+}
+
+.sec3-slider .over-slider {
+    z-index: 2;
+}
+
+.sec3-slider .slick-list {
+    overflow: visible;
+    padding: 0 20% 0 0;
+    position: relative;
+}
+
+.sec3-slider .slick-list::after {
+    content: ' ';
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    width: 4000px;
+    right: 100%;
+    background-color: var(--color-white-primary);
+}
+
+.slick-dots li,
+.slick-dots li button:before,
+.slick-dots li button {
+    background: #000000;
+    width: 17px;
+    height: 6px;
+    border-radius: 34px;
+    opacity: 0.1;
+    font-size: 0;
+    padding: 0;
+    margin: 0 2px;
+    content: '';
+}
+
+.slick-dots li.slick-active button:before,
+.slick-dots li.slick-active {
+    opacity: 100%;
+    background: var(--icon, #1DB487);
+    width: 29px;
+    transition: all 300ms linear;
+    border: 1px solid #00000014;
+    z-index: 3;
+}
+
+.slick-dots li button:before{
+    margin: 0;
+}
+
+
+
+
+@media (min-width:1200px) {
+    .container {
+        max-width: 1140px !important;
+    }
+}
