@@ -1,5 +1,23 @@
 
 
+let menuicon = document.querySelector(".menu-icon");
+let menulist = document.querySelector(".menu-list");
+
+menuicon.addEventListener("click", function () {
+    menulist.classList.toggle("show");
+    menuicon.classList.toggle("active");
+    menuicon.classList.toggle("not-active");
+});
+
+var navheading = document.querySelectorAll(".nav-heading");
+
+navheading.forEach((e) => {
+    e.addEventListener("click", function () {
+        menulist.classList.toggle("show");
+        menuicon.classList.toggle("active");
+        menuicon.classList.toggle("not-active");
+    });
+});
 
 
 $('.sec3-slider').slick({
@@ -13,7 +31,7 @@ $('.sec3-slider').slick({
         {
             breakpoint: 1024,
             settings: {
-                slidesToShow: 3,
+                slidesToShow: 2,
                 slidesToScroll: 3,
                 infinite: true,
                 dots: true
@@ -33,8 +51,5 @@ $('.sec3-slider').slick({
                 slidesToScroll: 1
             }
         }
-        // You can unslick at a given breakpoint now by adding:
-        // settings: "unslick"
-        // instead of a settings object
     ]
 });

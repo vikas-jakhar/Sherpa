@@ -17,35 +17,54 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="shortcut icon" href="./assets/image/svg/logo.svg" type="image/x-icon">
+
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
     <!-- header -->
-    <header class="position-fixed w-100 bg-white py-2 top-0 start-0 z-10">
+    <header class="position-fixed w-100 bg-white py-2 top-0 start-0 z-10" id="header1">
         <div class="container">
             <nav class="d-flex justify-content-between align-items-center">
                 <a href="">
                     <img src="./assets/image/svg/logo.svg" alt="logo">
                 </a>
-                <ul class="d-flex align-items-center gap-4 m-0 p-0">
-                    <li><a href=""
+                <ul class="d-flex align-items-center gap-4 m-0 p-0 menu-list">
+                    <li><a href="#header1"
                             class="font-Poppins fw-normal fs-base text-black-primary opacity-70 nav-heading">Home</a>
                     </li>
-                    <li><a href=""
+                    <li><a href="#header1"
                             class="font-Poppins fw-normal fs-base text-black-primary opacity-70 nav-heading">About
                             Us</a></li>
-                    <li><a href=""
+                    <li><a href="#header1"
                             class="font-Poppins fw-normal fs-base text-black-primary opacity-70 nav-heading">Services</a>
                     </li>
-                    <li><a href=""
+                    <li><a href="#header1"
                             class="font-Poppins fw-normal fs-base text-black-primary opacity-70 nav-heading">Blogs</a>
                     </li>
-                    <li><a href=""
+                    <li><a href="#header1"
                             class="font-Poppins fw-normal fs-base text-black-primary opacity-70 nav-heading">Conatct
                             Us</a></li>
+                    <li class="d-sm-none">
+                        <button class="font-Raleway fw-bold fs-base text-black-primary login-btn">
+                            LOG IN
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_4024_37)">
+                                    <path
+                                        d="M20 4.16667V15.8333C20 18.1333 18.1333 20 15.8333 20H13.3333C12.875 20 12.5 19.625 12.5 19.1667C12.5 18.7083 12.875 18.3333 13.3333 18.3333H15.8333C17.2083 18.3333 18.3333 17.2083 18.3333 15.8333V4.16667C18.3333 2.79167 17.2083 1.66667 15.8333 1.66667H13.3333C12.875 1.66667 12.5 1.29167 12.5 0.833333C12.5 0.375 12.875 0 13.3333 0H15.8333C18.1333 0 20 1.86667 20 4.16667ZM15 10C15 9.33333 14.7417 8.70833 14.275 8.24167L10.6 4.41667C10.2833 4.08333 9.75 4.075 9.425 4.39167C9.09167 4.70833 9.08333 5.24167 9.4 5.56667L12.8583 9.15833H0.833333C0.375 9.15833 0 9.53333 0 9.99167C0 10.45 0.375 10.825 0.833333 10.825H12.85L9.39167 14.4167C9.075 14.75 9.08333 15.275 9.41667 15.5917C9.575 15.75 9.78333 15.825 9.99167 15.825C10.2083 15.825 10.425 15.7417 10.5917 15.5667L14.2583 11.7583C14.7333 11.2833 14.9917 10.6583 14.9917 9.99167L15 10Z"
+                                        fill="black" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_4024_37">
+                                        <rect width="20" height="20" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </button>
+                    </li>
                 </ul>
-                <button class="font-Raleway fw-bold fs-base text-black-primary login-btn">
+                <button class="font-Raleway fw-bold fs-base text-black-primary login-btn d-none d-sm-block">
                     LOG IN
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_4024_37)">
@@ -60,6 +79,11 @@
                         </defs>
                     </svg>
                 </button>
+                <div class="menu-icon not-active d-lg-none">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </nav>
         </div>
     </header>
@@ -83,76 +107,187 @@
         <section class="py-4 position-relative">
             <div class="container position-relative z-1 my-5 py-5">
                 <h2 class="text-center fw-bold font-Raleway fs-6xl lh-46">What we do</h2>
-                <div class="sec3-slider pl-10">
-                    <div class="slider-box bg-white d-flex flex-column align-items-center justify-content-center my-5">
-                        <span>
-                            <svg width="49" height="48" viewBox="0 0 49 48" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M24.498 46C12.298 46 2.49805 36.2 2.49805 24C2.49805 11.8 12.298 2 24.498 2C27.698 2 30.698 2.6 33.498 4C34.498 4.4 34.898 5.6 34.498 6.6C34.098 7.6 32.898 8 31.898 7.6C29.498 6.6 27.098 6 24.498 6C14.498 6 6.49805 14 6.49805 24C6.49805 34 14.498 42 24.498 42C34.498 42 42.498 34 42.498 24V22.2C42.498 21 43.298 20.2 44.498 20.2C45.698 20.2 46.498 21 46.498 22.2V24C46.498 36.2 36.698 46 24.498 46Z"
-                                    fill="#1DB487" />
-                                <path
-                                    d="M24.502 30C23.902 30 23.502 29.8 23.102 29.4L17.102 23.4C16.302 22.6 16.302 21.4 17.102 20.6C17.902 19.8 19.102 19.8 19.902 20.6L24.502 25.2L43.102 6.6C43.902 5.8 45.102 5.8 45.902 6.6C46.702 7.4 46.702 8.6 45.902 9.4L25.902 29.4C25.502 29.8 25.102 30 24.502 30Z"
-                                    fill="#1DB487" />
-                            </svg>
-                        </span>
-                        <h2 class="fw-semibold fs-xl lh-xl text-black font-Poppins mt-4">Tenant Placement</h2>
+                <div class="pb-80">
+                    <div class="sec3-slider pl-10">
+                        <div
+                            class="slider-box bg-white d-flex flex-column align-items-center justify-content-center my-5">
+                            <span>
+                                <svg width="49" height="48" viewBox="0 0 49 48" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M24.498 46C12.298 46 2.49805 36.2 2.49805 24C2.49805 11.8 12.298 2 24.498 2C27.698 2 30.698 2.6 33.498 4C34.498 4.4 34.898 5.6 34.498 6.6C34.098 7.6 32.898 8 31.898 7.6C29.498 6.6 27.098 6 24.498 6C14.498 6 6.49805 14 6.49805 24C6.49805 34 14.498 42 24.498 42C34.498 42 42.498 34 42.498 24V22.2C42.498 21 43.298 20.2 44.498 20.2C45.698 20.2 46.498 21 46.498 22.2V24C46.498 36.2 36.698 46 24.498 46Z"
+                                        fill="#1DB487" />
+                                    <path
+                                        d="M24.502 30C23.902 30 23.502 29.8 23.102 29.4L17.102 23.4C16.302 22.6 16.302 21.4 17.102 20.6C17.902 19.8 19.102 19.8 19.902 20.6L24.502 25.2L43.102 6.6C43.902 5.8 45.102 5.8 45.902 6.6C46.702 7.4 46.702 8.6 45.902 9.4L25.902 29.4C25.502 29.8 25.102 30 24.502 30Z"
+                                        fill="#1DB487" />
+                                </svg>
+                            </span>
+                            <h2 class="fw-semibold fs-xl lh-xl text-black font-Poppins mt-4 text-center">Tenant Placement</h2>
+                        </div>
+                        <div
+                            class="slider-box bg-white d-flex flex-column align-items-center justify-content-center my-5">
+                            <span>
+                                <svg width="49" height="48" viewBox="0 0 49 48" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M24.498 46C12.298 46 2.49805 36.2 2.49805 24C2.49805 11.8 12.298 2 24.498 2C27.698 2 30.698 2.6 33.498 4C34.498 4.4 34.898 5.6 34.498 6.6C34.098 7.6 32.898 8 31.898 7.6C29.498 6.6 27.098 6 24.498 6C14.498 6 6.49805 14 6.49805 24C6.49805 34 14.498 42 24.498 42C34.498 42 42.498 34 42.498 24V22.2C42.498 21 43.298 20.2 44.498 20.2C45.698 20.2 46.498 21 46.498 22.2V24C46.498 36.2 36.698 46 24.498 46Z"
+                                        fill="#1DB487" />
+                                    <path
+                                        d="M24.502 30C23.902 30 23.502 29.8 23.102 29.4L17.102 23.4C16.302 22.6 16.302 21.4 17.102 20.6C17.902 19.8 19.102 19.8 19.902 20.6L24.502 25.2L43.102 6.6C43.902 5.8 45.102 5.8 45.902 6.6C46.702 7.4 46.702 8.6 45.902 9.4L25.902 29.4C25.502 29.8 25.102 30 24.502 30Z"
+                                        fill="#1DB487" />
+                                </svg>
+                            </span>
+                            <h2 class="fw-semibold fs-xl lh-xl text-black font-Poppins mt-4 text-center">Rent Collection</h2>
+                        </div>
+                        <div
+                            class="slider-box bg-white d-flex flex-column align-items-center justify-content-center my-5">
+                            <span>
+                                <svg width="49" height="48" viewBox="0 0 49 48" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M24.498 46C12.298 46 2.49805 36.2 2.49805 24C2.49805 11.8 12.298 2 24.498 2C27.698 2 30.698 2.6 33.498 4C34.498 4.4 34.898 5.6 34.498 6.6C34.098 7.6 32.898 8 31.898 7.6C29.498 6.6 27.098 6 24.498 6C14.498 6 6.49805 14 6.49805 24C6.49805 34 14.498 42 24.498 42C34.498 42 42.498 34 42.498 24V22.2C42.498 21 43.298 20.2 44.498 20.2C45.698 20.2 46.498 21 46.498 22.2V24C46.498 36.2 36.698 46 24.498 46Z"
+                                        fill="#1DB487" />
+                                    <path
+                                        d="M24.502 30C23.902 30 23.502 29.8 23.102 29.4L17.102 23.4C16.302 22.6 16.302 21.4 17.102 20.6C17.902 19.8 19.102 19.8 19.902 20.6L24.502 25.2L43.102 6.6C43.902 5.8 45.102 5.8 45.902 6.6C46.702 7.4 46.702 8.6 45.902 9.4L25.902 29.4C25.502 29.8 25.102 30 24.502 30Z"
+                                        fill="#1DB487" />
+                                </svg>
+                            </span>
+                            <h2 class="fw-semibold fs-xl lh-xl text-black font-Poppins mt-4 text-center">Property Trust Accounting</h2>
+                        </div>
+                        <div
+                            class="slider-box bg-white d-flex flex-column align-items-center justify-content-center my-5">
+                            <span>
+                                <svg width="49" height="48" viewBox="0 0 49 48" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M24.498 46C12.298 46 2.49805 36.2 2.49805 24C2.49805 11.8 12.298 2 24.498 2C27.698 2 30.698 2.6 33.498 4C34.498 4.4 34.898 5.6 34.498 6.6C34.098 7.6 32.898 8 31.898 7.6C29.498 6.6 27.098 6 24.498 6C14.498 6 6.49805 14 6.49805 24C6.49805 34 14.498 42 24.498 42C34.498 42 42.498 34 42.498 24V22.2C42.498 21 43.298 20.2 44.498 20.2C45.698 20.2 46.498 21 46.498 22.2V24C46.498 36.2 36.698 46 24.498 46Z"
+                                        fill="#1DB487" />
+                                    <path
+                                        d="M24.502 30C23.902 30 23.502 29.8 23.102 29.4L17.102 23.4C16.302 22.6 16.302 21.4 17.102 20.6C17.902 19.8 19.102 19.8 19.902 20.6L24.502 25.2L43.102 6.6C43.902 5.8 45.102 5.8 45.902 6.6C46.702 7.4 46.702 8.6 45.902 9.4L25.902 29.4C25.502 29.8 25.102 30 24.502 30Z"
+                                        fill="#1DB487" />
+                                </svg>
+                            </span>
+                            <h2 class="fw-semibold fs-xl lh-xl text-black font-Poppins mt-4 text-center">Maintenance Resolution</h2>
+                        </div>
+                        <div
+                            class="slider-box bg-white d-flex flex-column align-items-center justify-content-center my-5">
+                            <span>
+                                <svg width="49" height="48" viewBox="0 0 49 48" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M24.498 46C12.298 46 2.49805 36.2 2.49805 24C2.49805 11.8 12.298 2 24.498 2C27.698 2 30.698 2.6 33.498 4C34.498 4.4 34.898 5.6 34.498 6.6C34.098 7.6 32.898 8 31.898 7.6C29.498 6.6 27.098 6 24.498 6C14.498 6 6.49805 14 6.49805 24C6.49805 34 14.498 42 24.498 42C34.498 42 42.498 34 42.498 24V22.2C42.498 21 43.298 20.2 44.498 20.2C45.698 20.2 46.498 21 46.498 22.2V24C46.498 36.2 36.698 46 24.498 46Z"
+                                        fill="#1DB487" />
+                                    <path
+                                        d="M24.502 30C23.902 30 23.502 29.8 23.102 29.4L17.102 23.4C16.302 22.6 16.302 21.4 17.102 20.6C17.902 19.8 19.102 19.8 19.902 20.6L24.502 25.2L43.102 6.6C43.902 5.8 45.102 5.8 45.902 6.6C46.702 7.4 46.702 8.6 45.902 9.4L25.902 29.4C25.502 29.8 25.102 30 24.502 30Z"
+                                        fill="#1DB487" />
+                                </svg>
+                            </span>
+                            <h2 class="fw-semibold fs-xl lh-xl text-black font-Poppins mt-4 text-center">Security Deposit
+                            Management</h2>
+                        </div>
                     </div>
-                    <div class="slider-box bg-white d-flex flex-column align-items-center justify-content-center my-5">
-                        <span>
-                            <svg width="49" height="48" viewBox="0 0 49 48" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M24.498 46C12.298 46 2.49805 36.2 2.49805 24C2.49805 11.8 12.298 2 24.498 2C27.698 2 30.698 2.6 33.498 4C34.498 4.4 34.898 5.6 34.498 6.6C34.098 7.6 32.898 8 31.898 7.6C29.498 6.6 27.098 6 24.498 6C14.498 6 6.49805 14 6.49805 24C6.49805 34 14.498 42 24.498 42C34.498 42 42.498 34 42.498 24V22.2C42.498 21 43.298 20.2 44.498 20.2C45.698 20.2 46.498 21 46.498 22.2V24C46.498 36.2 36.698 46 24.498 46Z"
-                                    fill="#1DB487" />
-                                <path
-                                    d="M24.502 30C23.902 30 23.502 29.8 23.102 29.4L17.102 23.4C16.302 22.6 16.302 21.4 17.102 20.6C17.902 19.8 19.102 19.8 19.902 20.6L24.502 25.2L43.102 6.6C43.902 5.8 45.102 5.8 45.902 6.6C46.702 7.4 46.702 8.6 45.902 9.4L25.902 29.4C25.502 29.8 25.102 30 24.502 30Z"
-                                    fill="#1DB487" />
-                            </svg>
-                        </span>
-                        <h2 class="fw-semibold fs-xl lh-xl text-black font-Poppins mt-4">Tenant Placement</h2>
+                </div>
+                <h2 class="text-center fw-bold font-Raleway fs-6xl lh-46 mt-75">Beyond the Basecamp</h2>
+                <p class="fs-base font-Poppins lh-base opacity-70 text-center mt-2">Programs to Ensure Your Success</p>
+                <div class="row justify-content-center mt-60">
+                    <div class="col-12 col-sm-6 col-lg-4 mt-24">
+                        <div class="d-flex flex-column align-items-center sec3-box bg-white h-100">
+                            <span class="icon-1 d-grid">
+                                <svg width="34" height="40" viewBox="0 0 34 40" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M33.9564 10.2992C33.9356 9.2193 33.9158 8.19909 33.9158 7.21212C33.9158 6.43889 33.2818 5.81202 32.4994 5.81202C26.4424 5.81202 21.8307 4.09121 17.9866 0.396438C17.4367 -0.132239 16.5616 -0.132053 16.0119 0.396438C12.1682 4.09121 7.55728 5.81202 1.50057 5.81202C0.718386 5.81202 0.0842564 6.43889 0.0842564 7.21212C0.0842564 8.19928 0.0646169 9.21986 0.0436555 10.3C-0.150473 20.3501 -0.416361 34.1142 16.5354 39.9227C16.6857 39.9742 16.8424 40 16.9992 40C17.1559 40 17.3128 39.9742 17.463 39.9227C34.416 34.114 34.1505 20.3495 33.9564 10.2992ZM16.9993 37.1141C2.46101 31.8932 2.68083 20.4563 2.8759 10.3534C2.88761 9.74704 2.89894 9.15938 2.90687 8.58328C8.57966 8.34657 13.116 6.64722 16.9993 3.30304C20.8831 6.64722 25.4202 8.34676 31.0933 8.58328C31.1013 9.15919 31.1126 9.74648 31.1243 10.3524C31.3192 20.4557 31.5388 31.8931 16.9993 37.1141Z"
+                                        fill="#1DB487" />
+                                    <path
+                                        d="M21.8737 15.1366L15.0378 21.8938L12.1208 19.0102C11.5677 18.4636 10.6709 18.4636 10.118 19.0102C9.56485 19.5571 9.56485 20.4435 10.118 20.9903L14.0364 24.8639C14.3129 25.1372 14.6755 25.2738 15.0378 25.2738C15.4002 25.2738 15.7628 25.1372 16.0393 24.8639L23.8764 17.1167C24.4297 16.5699 24.4297 15.6833 23.8766 15.1367C23.3236 14.59 22.4268 14.5898 21.8737 15.1366Z"
+                                        fill="#1DB487" />
+                                </svg>
+                            </span>
+                            <h3 class="text-black fw-semibold fs-xl font-Poppins text-center lh-xl mt-32">1 Year Tenant
+                                Guarantee</h3>
+                            <p class="fw-normal font-Poppins fs-base lh-base opacity-70 text-center mt-8">If a tenant
+                                doesn’t make it through their 1st year we’ll find your next tenant for free</p>
+                        </div>
                     </div>
-                    <div class="slider-box bg-white d-flex flex-column align-items-center justify-content-center my-5">
-                        <span>
-                            <svg width="49" height="48" viewBox="0 0 49 48" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M24.498 46C12.298 46 2.49805 36.2 2.49805 24C2.49805 11.8 12.298 2 24.498 2C27.698 2 30.698 2.6 33.498 4C34.498 4.4 34.898 5.6 34.498 6.6C34.098 7.6 32.898 8 31.898 7.6C29.498 6.6 27.098 6 24.498 6C14.498 6 6.49805 14 6.49805 24C6.49805 34 14.498 42 24.498 42C34.498 42 42.498 34 42.498 24V22.2C42.498 21 43.298 20.2 44.498 20.2C45.698 20.2 46.498 21 46.498 22.2V24C46.498 36.2 36.698 46 24.498 46Z"
-                                    fill="#1DB487" />
-                                <path
-                                    d="M24.502 30C23.902 30 23.502 29.8 23.102 29.4L17.102 23.4C16.302 22.6 16.302 21.4 17.102 20.6C17.902 19.8 19.102 19.8 19.902 20.6L24.502 25.2L43.102 6.6C43.902 5.8 45.102 5.8 45.902 6.6C46.702 7.4 46.702 8.6 45.902 9.4L25.902 29.4C25.502 29.8 25.102 30 24.502 30Z"
-                                    fill="#1DB487" />
-                            </svg>
-                        </span>
-                        <h2 class="fw-semibold fs-xl lh-xl text-black font-Poppins mt-4">Tenant Placement</h2>
+                    <div class="col-12 col-sm-6 col-lg-4 mt-24">
+                        <div class="d-flex flex-column align-items-center sec3-box bg-white h-100">
+                            <span class="icon-1 d-grid">
+                                <svg width="34" height="40" viewBox="0 0 34 40" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M33.9564 10.2992C33.9356 9.2193 33.9158 8.19909 33.9158 7.21212C33.9158 6.43889 33.2818 5.81202 32.4994 5.81202C26.4424 5.81202 21.8307 4.09121 17.9866 0.396438C17.4367 -0.132239 16.5616 -0.132053 16.0119 0.396438C12.1682 4.09121 7.55728 5.81202 1.50057 5.81202C0.718386 5.81202 0.0842564 6.43889 0.0842564 7.21212C0.0842564 8.19928 0.0646169 9.21986 0.0436555 10.3C-0.150473 20.3501 -0.416361 34.1142 16.5354 39.9227C16.6857 39.9742 16.8424 40 16.9992 40C17.1559 40 17.3128 39.9742 17.463 39.9227C34.416 34.114 34.1505 20.3495 33.9564 10.2992ZM16.9993 37.1141C2.46101 31.8932 2.68083 20.4563 2.8759 10.3534C2.88761 9.74704 2.89894 9.15938 2.90687 8.58328C8.57966 8.34657 13.116 6.64722 16.9993 3.30304C20.8831 6.64722 25.4202 8.34676 31.0933 8.58328C31.1013 9.15919 31.1126 9.74648 31.1243 10.3524C31.3192 20.4557 31.5388 31.8931 16.9993 37.1141Z"
+                                        fill="#1DB487" />
+                                    <path
+                                        d="M21.8737 15.1366L15.0378 21.8938L12.1208 19.0102C11.5677 18.4636 10.6709 18.4636 10.118 19.0102C9.56485 19.5571 9.56485 20.4435 10.118 20.9903L14.0364 24.8639C14.3129 25.1372 14.6755 25.2738 15.0378 25.2738C15.4002 25.2738 15.7628 25.1372 16.0393 24.8639L23.8764 17.1167C24.4297 16.5699 24.4297 15.6833 23.8766 15.1367C23.3236 14.59 22.4268 14.5898 21.8737 15.1366Z"
+                                        fill="#1DB487" />
+                                </svg>
+                            </span>
+                            <h3 class="text-black fw-semibold fs-xl font-Poppins text-center lh-xl mt-32">1 Year Tenant
+                                Guarantee</h3>
+                            <p class="fw-normal font-Poppins fs-base lh-base opacity-70 text-center mt-8">If a tenant
+                                doesn’t make it
+                                through their 1st year we’ll find your next tenant for free</p>
+                        </div>
                     </div>
-                    <div class="slider-box bg-white d-flex flex-column align-items-center justify-content-center my-5">
-                        <span>
-                            <svg width="49" height="48" viewBox="0 0 49 48" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M24.498 46C12.298 46 2.49805 36.2 2.49805 24C2.49805 11.8 12.298 2 24.498 2C27.698 2 30.698 2.6 33.498 4C34.498 4.4 34.898 5.6 34.498 6.6C34.098 7.6 32.898 8 31.898 7.6C29.498 6.6 27.098 6 24.498 6C14.498 6 6.49805 14 6.49805 24C6.49805 34 14.498 42 24.498 42C34.498 42 42.498 34 42.498 24V22.2C42.498 21 43.298 20.2 44.498 20.2C45.698 20.2 46.498 21 46.498 22.2V24C46.498 36.2 36.698 46 24.498 46Z"
-                                    fill="#1DB487" />
-                                <path
-                                    d="M24.502 30C23.902 30 23.502 29.8 23.102 29.4L17.102 23.4C16.302 22.6 16.302 21.4 17.102 20.6C17.902 19.8 19.102 19.8 19.902 20.6L24.502 25.2L43.102 6.6C43.902 5.8 45.102 5.8 45.902 6.6C46.702 7.4 46.702 8.6 45.902 9.4L25.902 29.4C25.502 29.8 25.102 30 24.502 30Z"
-                                    fill="#1DB487" />
-                            </svg>
-                        </span>
-                        <h2 class="fw-semibold fs-xl lh-xl text-black font-Poppins mt-4">Tenant Placement</h2>
+                    <div class="col-12 col-sm-6 col-lg-4 mt-24">
+                        <div class="d-flex flex-column align-items-center sec3-box bg-white h-100">
+                            <span class="icon-1 d-grid">
+                                <svg width="34" height="40" viewBox="0 0 34 40" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M33.9564 10.2992C33.9356 9.2193 33.9158 8.19909 33.9158 7.21212C33.9158 6.43889 33.2818 5.81202 32.4994 5.81202C26.4424 5.81202 21.8307 4.09121 17.9866 0.396438C17.4367 -0.132239 16.5616 -0.132053 16.0119 0.396438C12.1682 4.09121 7.55728 5.81202 1.50057 5.81202C0.718386 5.81202 0.0842564 6.43889 0.0842564 7.21212C0.0842564 8.19928 0.0646169 9.21986 0.0436555 10.3C-0.150473 20.3501 -0.416361 34.1142 16.5354 39.9227C16.6857 39.9742 16.8424 40 16.9992 40C17.1559 40 17.3128 39.9742 17.463 39.9227C34.416 34.114 34.1505 20.3495 33.9564 10.2992ZM16.9993 37.1141C2.46101 31.8932 2.68083 20.4563 2.8759 10.3534C2.88761 9.74704 2.89894 9.15938 2.90687 8.58328C8.57966 8.34657 13.116 6.64722 16.9993 3.30304C20.8831 6.64722 25.4202 8.34676 31.0933 8.58328C31.1013 9.15919 31.1126 9.74648 31.1243 10.3524C31.3192 20.4557 31.5388 31.8931 16.9993 37.1141Z"
+                                        fill="#1DB487" />
+                                    <path
+                                        d="M21.8737 15.1366L15.0378 21.8938L12.1208 19.0102C11.5677 18.4636 10.6709 18.4636 10.118 19.0102C9.56485 19.5571 9.56485 20.4435 10.118 20.9903L14.0364 24.8639C14.3129 25.1372 14.6755 25.2738 15.0378 25.2738C15.4002 25.2738 15.7628 25.1372 16.0393 24.8639L23.8764 17.1167C24.4297 16.5699 24.4297 15.6833 23.8766 15.1367C23.3236 14.59 22.4268 14.5898 21.8737 15.1366Z"
+                                        fill="#1DB487" />
+                                </svg>
+                            </span>
+                            <h3 class="text-black fw-semibold fs-xl font-Poppins text-center lh-xl mt-32">1 Year Tenant
+                                Guarantee</h3>
+                            <p class="fw-normal font-Poppins fs-base lh-base opacity-70 text-center mt-8">If a tenant
+                                doesn’t make it
+                                through their 1st year we’ll find your next tenant for free</p>
+                        </div>
                     </div>
-                    <div class="slider-box bg-white d-flex flex-column align-items-center justify-content-center my-5">
-                        <span>
-                            <svg width="49" height="48" viewBox="0 0 49 48" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M24.498 46C12.298 46 2.49805 36.2 2.49805 24C2.49805 11.8 12.298 2 24.498 2C27.698 2 30.698 2.6 33.498 4C34.498 4.4 34.898 5.6 34.498 6.6C34.098 7.6 32.898 8 31.898 7.6C29.498 6.6 27.098 6 24.498 6C14.498 6 6.49805 14 6.49805 24C6.49805 34 14.498 42 24.498 42C34.498 42 42.498 34 42.498 24V22.2C42.498 21 43.298 20.2 44.498 20.2C45.698 20.2 46.498 21 46.498 22.2V24C46.498 36.2 36.698 46 24.498 46Z"
-                                    fill="#1DB487" />
-                                <path
-                                    d="M24.502 30C23.902 30 23.502 29.8 23.102 29.4L17.102 23.4C16.302 22.6 16.302 21.4 17.102 20.6C17.902 19.8 19.102 19.8 19.902 20.6L24.502 25.2L43.102 6.6C43.902 5.8 45.102 5.8 45.902 6.6C46.702 7.4 46.702 8.6 45.902 9.4L25.902 29.4C25.502 29.8 25.102 30 24.502 30Z"
-                                    fill="#1DB487" />
-                            </svg>
-                        </span>
-                        <h2 class="fw-semibold fs-xl lh-xl text-black font-Poppins mt-4">Tenant Placement</h2>
+                    <div class="col-12 col-sm-6 col-lg-4 mt-24">
+                        <div class="d-flex flex-column align-items-center sec3-box bg-white h-100">
+                            <span class="icon-1 d-grid">
+                                <svg width="34" height="40" viewBox="0 0 34 40" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M33.9564 10.2992C33.9356 9.2193 33.9158 8.19909 33.9158 7.21212C33.9158 6.43889 33.2818 5.81202 32.4994 5.81202C26.4424 5.81202 21.8307 4.09121 17.9866 0.396438C17.4367 -0.132239 16.5616 -0.132053 16.0119 0.396438C12.1682 4.09121 7.55728 5.81202 1.50057 5.81202C0.718386 5.81202 0.0842564 6.43889 0.0842564 7.21212C0.0842564 8.19928 0.0646169 9.21986 0.0436555 10.3C-0.150473 20.3501 -0.416361 34.1142 16.5354 39.9227C16.6857 39.9742 16.8424 40 16.9992 40C17.1559 40 17.3128 39.9742 17.463 39.9227C34.416 34.114 34.1505 20.3495 33.9564 10.2992ZM16.9993 37.1141C2.46101 31.8932 2.68083 20.4563 2.8759 10.3534C2.88761 9.74704 2.89894 9.15938 2.90687 8.58328C8.57966 8.34657 13.116 6.64722 16.9993 3.30304C20.8831 6.64722 25.4202 8.34676 31.0933 8.58328C31.1013 9.15919 31.1126 9.74648 31.1243 10.3524C31.3192 20.4557 31.5388 31.8931 16.9993 37.1141Z"
+                                        fill="#1DB487" />
+                                    <path
+                                        d="M21.8737 15.1366L15.0378 21.8938L12.1208 19.0102C11.5677 18.4636 10.6709 18.4636 10.118 19.0102C9.56485 19.5571 9.56485 20.4435 10.118 20.9903L14.0364 24.8639C14.3129 25.1372 14.6755 25.2738 15.0378 25.2738C15.4002 25.2738 15.7628 25.1372 16.0393 24.8639L23.8764 17.1167C24.4297 16.5699 24.4297 15.6833 23.8766 15.1367C23.3236 14.59 22.4268 14.5898 21.8737 15.1366Z"
+                                        fill="#1DB487" />
+                                </svg>
+                            </span>
+                            <h3 class="text-black fw-semibold fs-xl font-Poppins text-center lh-xl mt-32">1 Year Tenant
+                                Guarantee</h3>
+                            <p class="fw-normal font-Poppins fs-base lh-base opacity-70 text-center mt-8">If a tenant
+                                doesn’t make it
+                                through their 1st year we’ll find your next tenant for free</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4 mt-24">
+                        <div class="d-flex flex-column align-items-center sec3-box bg-white h-100">
+                            <span class="icon-1 d-grid">
+                                <svg width="34" height="40" viewBox="0 0 34 40" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M33.9564 10.2992C33.9356 9.2193 33.9158 8.19909 33.9158 7.21212C33.9158 6.43889 33.2818 5.81202 32.4994 5.81202C26.4424 5.81202 21.8307 4.09121 17.9866 0.396438C17.4367 -0.132239 16.5616 -0.132053 16.0119 0.396438C12.1682 4.09121 7.55728 5.81202 1.50057 5.81202C0.718386 5.81202 0.0842564 6.43889 0.0842564 7.21212C0.0842564 8.19928 0.0646169 9.21986 0.0436555 10.3C-0.150473 20.3501 -0.416361 34.1142 16.5354 39.9227C16.6857 39.9742 16.8424 40 16.9992 40C17.1559 40 17.3128 39.9742 17.463 39.9227C34.416 34.114 34.1505 20.3495 33.9564 10.2992ZM16.9993 37.1141C2.46101 31.8932 2.68083 20.4563 2.8759 10.3534C2.88761 9.74704 2.89894 9.15938 2.90687 8.58328C8.57966 8.34657 13.116 6.64722 16.9993 3.30304C20.8831 6.64722 25.4202 8.34676 31.0933 8.58328C31.1013 9.15919 31.1126 9.74648 31.1243 10.3524C31.3192 20.4557 31.5388 31.8931 16.9993 37.1141Z"
+                                        fill="#1DB487" />
+                                    <path
+                                        d="M21.8737 15.1366L15.0378 21.8938L12.1208 19.0102C11.5677 18.4636 10.6709 18.4636 10.118 19.0102C9.56485 19.5571 9.56485 20.4435 10.118 20.9903L14.0364 24.8639C14.3129 25.1372 14.6755 25.2738 15.0378 25.2738C15.4002 25.2738 15.7628 25.1372 16.0393 24.8639L23.8764 17.1167C24.4297 16.5699 24.4297 15.6833 23.8766 15.1367C23.3236 14.59 22.4268 14.5898 21.8737 15.1366Z"
+                                        fill="#1DB487" />
+                                </svg>
+                            </span>
+                            <h3 class="text-black fw-semibold fs-xl font-Poppins text-center lh-xl mt-32">1 Year Tenant
+                                Guarantee</h3>
+                            <p class="fw-normal font-Poppins fs-base lh-base opacity-70 text-center mt-8">If a tenant
+                                doesn’t make it
+                                through their 1st year we’ll find your next tenant for free</p>
+                        </div>
                     </div>
                 </div>
             </div>
