@@ -115,3 +115,13 @@ $('.sec6-slider').slick({
         }
     ]
 });
+
+const accordionheading = document.querySelectorAll(".accordion-heading");
+
+accordionheading.forEach((e) => {
+    e.addEventListener("click", function () {
+        const activeremove = document.querySelector(".accordion1.accordion-active");
+        e.parentElement.classList.toggle("accordion-active");
+        activeremove && activeremove.classList.remove("accordion-active");
+    })
+})
