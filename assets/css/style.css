@@ -4,6 +4,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Fira+Sans+Extra+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Racing+Sans+One&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Fira+Sans+Extra+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Racing+Sans+One&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     margin: 0%;
     padding: 0%;
@@ -23,10 +25,22 @@
     font-family: "Raleway", sans-serif;
 }
 
+.font-Inter {
+    font-family: "Inter", sans-serif;
+}
+
 /* margin-padding */
+
+.mt-135 {
+    margin-top: 135px;
+}
 
 .mt-75 {
     margin-top: 75px;
+}
+
+.mt-16 {
+    margin-top: 16px;
 }
 
 .mt-8 {
@@ -69,10 +83,23 @@
     padding: 24px;
 }
 
-/* navbar */
+.py-24 {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+/* navbar-opacity */
 
 .opacity-70 {
     opacity: 70%;
+}
+
+.opacity-60 {
+    opacity: 60%;
+}
+
+.opacity-40{
+    opacity: 40%;
 }
 
 .nav-heading {
@@ -412,6 +439,10 @@
     max-width: 624px;
 }
 
+.max-w-501 {
+    max-width: 501px;
+}
+
 .max-w-572 {
     max-width: 572px;
 }
@@ -430,6 +461,14 @@
 
 .max-w-679 {
     max-width: 679px;
+}
+
+.w-fit {
+    width: fit-content;
+}
+
+.h-1 {
+    height: 1px;
 }
 
 .h-160 {
@@ -499,6 +538,10 @@
 
 .top-46 {
     top: 46%;
+}
+
+.top-120 {
+    top: 120px;
 }
 
 .top-40 {
@@ -594,6 +637,48 @@
 .accordion-active .hide-text {
     position: unset;
     transform: translateY(0%);
+}
+
+/* form-input */
+
+.input-email {
+    border-radius: 8px;
+    padding-left: 18px;
+    padding-right: 18px;
+    border: none;
+}
+
+.input-box {
+    border: 1px solid #0000000A;
+    box-shadow: 0px 2px 15.4px 0px #0000001F;
+    max-width: 476px;
+    min-height: 55px;
+    border-radius: 8px;
+}
+
+.input-email::placeholder {
+    opacity: 100% !important;
+}
+
+.btn-get {
+    color: var(--bg2, #08372B);
+    background: #A5ECD7;
+    border: 1px solid #0000001F;
+    width: 162px;
+    height: 55px;
+    border-radius: 8px;
+    left: -15px;
+}
+
+
+/* footer-icon */
+
+.footer-icon {
+    width: 36.5px;
+    height: 36.5px;
+    border: 0.5px solid var(--color-white-primary);
+    border-radius: 100%;
+    place-items: center;
 }
 
 
