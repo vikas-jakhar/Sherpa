@@ -29,9 +29,11 @@
     --color-black2: #0000001F;
     --color-black: #000000;
     --color-black3: #00000014;
+    --color-black4: ##030303;
     --color-Light-Green: #93E3CC;
     --color-Light-Green2: #1DB487;
     --color-gray-primary: #BABABA;
+    --color-gray-secondary: #9B9B9B;
 
 }
 
@@ -85,4 +87,8 @@
 
 .text-black-primary {
     color: var(--color-black-primary);
+}
+
+.text-black4 {
+    color: var(--color-black4);
 }
