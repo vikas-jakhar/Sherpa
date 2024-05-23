@@ -2,11 +2,13 @@
 
 let menuicon = document.querySelector(".menu-icon");
 let menulist = document.querySelector(".menu-list");
+let body = document.querySelector(".body");
 
 menuicon.addEventListener("click", function () {
     menulist.classList.toggle("show");
     menuicon.classList.toggle("active");
     menuicon.classList.toggle("not-active");
+    body.classList.toggle("position-fixed");
 });
 
 var navheading = document.querySelectorAll(".nav-heading");
@@ -16,6 +18,7 @@ navheading.forEach((e) => {
         menulist.classList.toggle("show");
         menuicon.classList.toggle("active");
         menuicon.classList.toggle("not-active");
+        body.classList.toggle("position-fixed");
     });
 });
 

@@ -479,8 +479,8 @@
     height: 160vh;
 }
 
-.min-vh-110 {
-    min-height: 110vh;
+.max-w-479 {
+    max-width: 479px;
 }
 
 .login-btn {
@@ -490,6 +490,16 @@
     height: 56px;
     border-radius: 8px;
     transition: all 300ms linear;
+}
+
+.btn-learn {
+    color: #08372B;
+    border: 1px solid #0000001F;
+    background: var(--color-white-primary);
+    width: 159px;
+    height: 55px;
+    border-radius: 8px;
+    ;
 }
 
 .z-10 {
@@ -700,6 +710,10 @@
     .position-md-relative {
         position: relative;
     }
+
+    .mt-md-150 {
+        margin-top: 150px !important;
+    }
 }
 
 @media (min-width:992px) {
@@ -770,6 +784,13 @@
         background-size: contain;
     }
 
+    .mt-lg-200 {
+        margin-top: 200px !important;
+    }
+
+    .pt-lg-115 {
+        padding-top: 115px !important;
+    }
 }
 
 @media (min-width:1200px) {
@@ -804,5 +825,20 @@
     .next,
     .next1 {
         right: -50px;
+    }
+
+    .py-xxl-200 {
+        padding-top: 200px !important;
+        padding-bottom: 200px !important;
+    }
+
+    .pt-xxl-50{
+        padding-top: 50px !important;
+    }
+}
+
+@media (min-width:1536px) {
+    .pt-2xxl-150{
+        padding-top: 200px !important;
     }
 }
