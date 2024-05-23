@@ -15,22 +15,34 @@
     --lh-base: 24px;
     --lh-lg: 28px;
     --lh-xl: 30px;
-    --lh-2xl: 46px;
+    --lh-2xl: 35px;
     --lh-3xl: 40px;
 
     /* color */
     --color-white-primary: #FFFFFF;
+    --color-gary-primary: #FFFFFF3D;
     --color-black-primary: #090909;
     --color-black-secondary: #00000029;
     --color-black1: #0000000A;
     --color-black2: #0000001F;
     --color-black: #000000;
     --color-black3: #00000014;
-    --color-black4: ##030303;
+    --color-black4: #030303;
+    --color-black5: #0505053d;
     --color-Light-Green: #93E3CC;
     --color-Light-Green2: #1DB487;
+    --color-dark-lime: #1DB4873D;
+    --color-light-lime: #42B694;
+    --color-light-lime1: #A5ECD7;
+    --color-dark-Green: #08372B;
+    --color-dark-Green2: #1DB4871A;
+    --color-dark-springgreen: #00825C;
     --color-gray-primary: #BABABA;
     --color-gray-secondary: #9B9B9B;
+    --color-gray-light: #FFFFFF5C;
+    --color-gray-dark: #85858533;
+    --color-black-dark: #0000000F;
+    --color-white-light: #D6D6D6;
 
 }
 
@@ -93,12 +105,13 @@
 @media (min-width:576px) {
     :root {
         /* font-size */
-
+        --fs-6xl: 40px;
         --fs-7xl: 40px;
 
         /* line-height */
 
         --lh-3xl: 56px;
+        --lh-2xl: 46px;
     }
 }
 
@@ -118,38 +131,13 @@
 @media (min-width:992px) {
     :root {
         /* font-size */
-        --fs-xs: 12px;
-        --fs-sm: 14px;
-        --fs-base: 16px;
-        --fs-lg: 18px;
-        --fs-xl: 20px;
         --fs-2xl: 24px;
         --fs-3xl: 28px;
         --fs-6xl: 40px;
         --fs-7xl: 64px;
 
         /* line-height */
-        --lh-xs: 16px;
-        --lh-sm: 20px;
-        --lh-base: 24px;
-        --lh-lg: 28px;
-        --lh-xl: 30px;
         --lh-2xl: 46px;
         --lh-3xl: 75px;
-
-        /* color */
-        --color-white-primary: #FFFFFF;
-        --color-black-primary: #090909;
-        --color-black-secondary: #00000029;
-        --color-black1: #0000000A;
-        --color-black2: #0000001F;
-        --color-black: #000000;
-        --color-black3: #00000014;
-        --color-black4: ##030303;
-        --color-Light-Green: #93E3CC;
-        --color-Light-Green2: #1DB487;
-        --color-gray-primary: #BABABA;
-        --color-gray-secondary: #9B9B9B;
-
     }
 }

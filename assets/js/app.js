@@ -1,4 +1,4 @@
-
+AOS.init({once:true});
 
 let menuicon = document.querySelector(".menu-icon");
 let menulist = document.querySelector(".menu-list");
@@ -8,7 +8,7 @@ menuicon.addEventListener("click", function () {
     menulist.classList.toggle("show");
     menuicon.classList.toggle("active");
     menuicon.classList.toggle("not-active");
-    body.classList.toggle("position-fixed");
+    body.classList.toggle("overflow-hidden");
 });
 
 var navheading = document.querySelectorAll(".nav-heading");
@@ -18,7 +18,7 @@ navheading.forEach((e) => {
         menulist.classList.toggle("show");
         menuicon.classList.toggle("active");
         menuicon.classList.toggle("not-active");
-        body.classList.toggle("position-fixed");
+        body.classList.toggle("overflow-hidden");
     });
 });
 
@@ -127,4 +127,33 @@ accordionheading.forEach((e) => {
         e.parentElement.classList.toggle("accordion-active");
         activeremove && activeremove.classList.remove("accordion-active");
     })
-})
+});
+
+const preloader = document.querySelector(".preloader");
+
+preloader.style.display = "grid";
+
+setTimeout(() => {
+    preloader.style.display = "none"
+}, 1000);
+
+let scroll1 = document.querySelector(".scrolltop");
+
+scroll1.addEventListener("click", () => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+});
+
+function toggleScroll1() {
+    if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+        scroll1.style.display = "grid";
+    } else {
+        scroll1.style.display = "none";
+    }
+};
+
+document.body.scrollTop = document.documentElement.scrollTop = 0;
+
+window.addEventListener("scroll", toggleScroll1);

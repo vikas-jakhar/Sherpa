@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SHERPA</title>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
@@ -23,13 +26,15 @@
 
 <body class="body">
     <!-- header -->
-    <header class="position-fixed w-100 bg-white py-2 top-0 start-0 z-10" id="header1">
-        <div class="container">
+    <header
+        class="position-fixed w-100 bg-white py-2 top-0 start-0 z-10 d-flex align-items-center h-100px overflow-hidden"
+        id="header1">
+        <div class="container w-100">
             <nav class="d-flex justify-content-between align-items-center">
                 <a href="">
                     <img src="./assets/image/svg/logo.svg" alt="logo">
                 </a>
-                <ul class="d-flex align-items-center gap-4 m-0 p-0 menu-list">
+                <ul class="d-flex align-items-center gap-24 m-0 p-0 menu-list z-2">
                     <li><a href="#header1"
                             class="font-Poppins fw-normal fs-base text-black-primary opacity-70 nav-heading">Home</a>
                     </li>
@@ -79,7 +84,7 @@
                         </defs>
                     </svg>
                 </button>
-                <div class="menu-icon not-active d-lg-none">
+                <div class="menu-icon not-active d-lg-none z-3">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -90,29 +95,37 @@
     <main class="overflow-hidden bg-white">
         <!-- section-1 -->
         <section class="pt-2 min-vh-100 section-1 position-relative d-flex align-items-end mt-75">
-            <div class="container position-absolute z-2 d-flex flex-column h-100 top-0 w-100 start-50 translate-middle-x pt-xxl-50 pt-2xxl-150">
-                <div class="d-flex mb-md-5 mb-lg-2 mb-xxl-1 justify-content-lg-end pt-lg-5 mt-lg-5 pt-lg-115 mt-lg-200 py-xxl-200">
-                    <h2 class="text-white fs-7xl fw-bold max-w-495 lh-3xl mt-75">
+            <div
+                class="container position-absolute z-2 d-flex flex-column h-100 top-0 w-100 start-50 translate-middle-x pt-xxl-50 pt-2xxl-150">
+                <div
+                    class="d-flex mb-md-5 mb-lg-2 mb-xxl-1 justify-content-lg-end pt-lg-5 mt-lg-5 pt-lg-115 mt-lg-200 py-xxl-200">
+                    <h2 class="text-white fs-7xl fw-bold max-w-495 lh-3xl mt-75 font-Raleway" data-aos="fade-left"
+                        data-aos-easing="ease-in-sine" data-aos-duration="500">
                         Proven Property Management
                         Experts
                     </h2>
                 </div>
-                <div class="d-flex flex-column max-w-479 mt-sm-5 mt-md-150 mt-5">
-                    <h4 class="fw-bold font-Raleway text-white fs-6xl lh-2xl">About Us</h4>
+                <div class="d-flex flex-column max-w-479 mt-sm-5 mt-md-150 mt-5" data-aos="fade-right"
+                    data-aos-easing="ease-in-sine" data-aos-duration="500">
+                    <h4 class="fw-bold font-Raleway text-white fs-6xl lh-2xl mb-0">About Us</h4>
                     <p class="fs-base fw-normal lh-base text-white font-Poppins opacity-70 mb-0 mt-16">
-                        Sherpa Property Management is a full service property management company handling the daily management of the property,
-                        tenant relations, maintenance of the property, property accounting, rental licensing & lead paint certificates
+                        Sherpa Property Management is a full service property management company handling the daily
+                        management of the property,
+                        tenant relations, maintenance of the property, property accounting, rental licensing & lead
+                        paint certificates
                     </p>
                     <button class="btn-learn font-Raleway fw-bold fs-base lh-sm mt-32">LEARN MORE</button>
                 </div>
             </div>
-            <img src="./assets/image/png/hero-section-image1.png" alt="hero-section-img" class="w-100 position-relative z-1 h-100">
+            <img src="./assets/image/png/hero-section-image1.png" alt="hero-section-img"
+                class="w-100 position-relative z-1 h-100">
         </section>
         <!-- section-2 -->
         <section class="py-4 position-relative bg-white mt-20">
             <div class="container position-relative z-1 my-5 py-5">
-                <h2 class="text-center fw-bold font-Raleway fs-6xl lh-2xl mt-32">What we do</h2>
-                <div class="pb-80">
+                <h2 class="text-center fw-bold font-Raleway fs-6xl lh-2xl mt-32" data-aos="fade-up"
+                    data-aos-duration="2000">What we do</h2>
+                <div class="pb-80" data-aos="fade-left" data-aos-duration="2000">
                     <div class="sec3-slider pl-10">
                         <div
                             class="slider-box bg-white d-flex flex-column align-items-center justify-content-center my-5">
@@ -197,10 +210,13 @@
                         </div>
                     </div>
                 </div>
-                <h2 class="text-center fw-bold font-Raleway fs-6xl lh-2xl mt-75">Beyond the Basecamp</h2>
-                <p class="fs-base font-Poppins lh-base opacity-70 text-center mt-2">Programs to Ensure Your Success</p>
+                <h2 class="text-center fw-bold font-Raleway fs-6xl lh-2xl mt-48 mb-0" data-aos="fade-up"
+                    data-aos-duration="3000">Beyond the Basecamp</h2>
+                <p class="fs-base font-Poppins lh-base opacity-70 text-center mt-16 mb-0" data-aos="fade-up"
+                    data-aos-duration="3000">Programs to Ensure Your
+                    Success</p>
                 <div class="row justify-content-center mt-60">
-                    <div class="col-12 col-sm-6 col-lg-4 mt-24">
+                    <div class="col-12 col-sm-6 col-lg-4 mt-24" data-aos="zoom-in" data-aos-duration="2000">
                         <div class="d-flex flex-column align-items-center sec3-box bg-white h-100">
                             <span class="icon-1 d-grid">
                                 <svg width="34" height="40" viewBox="0 0 34 40" fill="none"
@@ -219,7 +235,7 @@
                                 doesn’t make it through their 1st year we’ll find your next tenant for free</p>
                         </div>
                     </div>
-                    <div class="col-12 col-sm-6 col-lg-4 mt-24">
+                    <div class="col-12 col-sm-6 col-lg-4 mt-24" data-aos="zoom-in" data-aos-duration="2000">
                         <div class="d-flex flex-column align-items-center sec3-box bg-white h-100">
                             <span class="icon-1 d-grid">
                                 <svg width="40" height="45" viewBox="0 0 40 45" fill="none"
@@ -252,7 +268,7 @@
                                 We will pay for damage caused by a tenants pet</p>
                         </div>
                     </div>
-                    <div class="col-12 col-sm-6 col-lg-4 mt-24">
+                    <div class="col-12 col-sm-6 col-lg-4 mt-24" data-aos="zoom-in" data-aos-duration="2000">
                         <div class="d-flex flex-column align-items-center sec3-box bg-white h-100">
                             <span class="icon-1 d-grid">
                                 <svg width="42" height="46" viewBox="0 0 42 46" fill="none"
@@ -277,7 +293,7 @@
                                 Maximize your HVAC lifespan with filters delivered to tenants quarterly</p>
                         </div>
                     </div>
-                    <div class="col-12 col-sm-6 col-lg-4 mt-24">
+                    <div class="col-12 col-sm-6 col-lg-4 mt-24" data-aos="zoom-in" data-aos-duration="2000">
                         <div class="d-flex flex-column align-items-center sec3-box bg-white h-100">
                             <span class="icon-1 d-grid">
                                 <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
@@ -314,7 +330,7 @@
                                 Our leases always reflect new legislature </p>
                         </div>
                     </div>
-                    <div class="col-12 col-sm-6 col-lg-4 mt-24">
+                    <div class="col-12 col-sm-6 col-lg-4 mt-24" data-aos="zoom-in" data-aos-duration="2000">
                         <div class="d-flex flex-column align-items-center sec3-box bg-white h-100">
                             <span class="icon-1 d-grid">
                                 <svg width="40" height="41" viewBox="0 0 40 41" fill="none"
@@ -393,17 +409,18 @@
                     </div>
                 </div>
             </div>
-            <img src="./assets/image/png/cloud-img.png" alt="cloud-img" class="position-absolute top-43 start-0">
+            <img src="./assets/image/png/cloud-img.png" alt="cloud-img" class="position-absolute top-43 start-0"
+                data-aos="fade-right" data-aos-duration="2000">
             <img src="./assets/image/png/cloud2-left-img.png" alt="cloud2-left-img"
-                class="position-absolute start-0 bottom-119">
+                class="position-absolute start-0 bottom-119" data-aos="fade-right" data-aos-duration="2000">
             <img src="./assets/image/png/cloud3-right-img.png" alt="cloud3-right-img"
-                class="position-absolute end-0 top-60">
+                class="position-absolute end-0 top-60" data-aos="fade-left" data-aos-duration="2000">
         </section>
         <!-- section-3 -->
         <section class="section-4 py-5 position-relative min-vh-xl-150 min-h-lg-115 h-160 d-flex align-items-center">
             <div class="container position-relative z-1 my-5">
-                <div class="max-w-461">
-                    <h2 class="fw-bold font-Raleway fs-6xl lh-2xl text-black text-lg-white">Why Choose Us? </h2>
+                <div class="max-w-461" data-aos="fade-right" data-aos-duration="2000">
+                    <h2 class="fw-bold font-Raleway fs-6xl lh-2xl text-black text-lg-white mb-0">Why Choose Us? </h2>
                     <div class="mt-60 d-flex gap-20 fill-lg-white">
                         <span>
                             <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
@@ -477,8 +494,10 @@
             <div class="container position-relative z-1 mb-5 pb-5">
                 <div class="d-flex justify-content-center">
                     <div class="max-w-624">
-                        <h2 class="text-center fw-bold font-Raleway fs-6xl lh-2xl mt-75">What Our Clients Says</h2>
-                        <p class="fs-base font-Poppins lh-base opacity-70 text-center mt-2">Lorem ipsum dolor sit amet
+                        <h2 class="text-center fw-bold font-Raleway fs-6xl lh-2xl mt-75 mb-0" data-aos="fade-up"
+                            data-aos-duration="2000">What Our Clients Says</h2>
+                        <p class="fs-base font-Poppins lh-base opacity-70 text-center mt-16" data-aos="fade-up"
+                            data-aos-duration="2000">Lorem ipsum dolor sit amet
                             consectetur.
                             Suspendisse etiam massa id diam. Convallis nulla enim odio lorem imperdiet
                             viverra purus tristique.
@@ -487,7 +506,7 @@
                 </div>
                 <div class="py-1 position-relative">
                     <div class="sec5-slider">
-                        <div class="slider-box2">
+                        <div class="slider-box2" data-aos="zoom-in" data-aos-duration="2000">
                             <span>
                                 <svg width="21" height="16" viewBox="0 0 21 16" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -511,7 +530,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="slider-box2">
+                        <div class="slider-box2" data-aos="zoom-in" data-aos-duration="2000">
                             <span>
                                 <svg width="21" height="16" viewBox="0 0 21 16" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -535,7 +554,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="slider-box2">
+                        <div class="slider-box2" data-aos="zoom-in" data-aos-duration="2000">
                             <span>
                                 <svg width="21" height="16" viewBox="0 0 21 16" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -560,7 +579,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="slider-box2">
+                        <div class="slider-box2" data-aos="zoom-in" data-aos-duration="2000">
                             <span>
                                 <svg width="21" height="16" viewBox="0 0 21 16" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -585,7 +604,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="slider-box2">
+                        <div class="slider-box2" data-aos="zoom-in" data-aos-duration="2000">
                             <span>
                                 <svg width="21" height="16" viewBox="0 0 21 16" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -628,8 +647,10 @@
                 </div>
                 <div class="d-flex justify-content-center">
                     <div class="max-w-572 pt-4">
-                        <h2 class="text-center fw-bold font-Raleway fs-6xl lh-2xl mt-75">Video Tutorial</h2>
-                        <p class="fs-base font-Poppins lh-base opacity-70 text-center mt-2">
+                        <h2 class="text-center fw-bold font-Raleway fs-6xl lh-2xl mt-75 mb-0" data-aos="fade-up"
+                            data-aos-duration="2000">Video Tutorial</h2>
+                        <p class="fs-base font-Poppins lh-base opacity-70 text-center mt-16" data-aos="fade-up"
+                            data-aos-duration="2000">
                             Lorem ipsum dolor sit amet consectetur. Suspendisse etiam massa id diam. Convallis nulla
                             enim odio lorem imperdiet
                             viverra purus tristique.
@@ -637,7 +658,8 @@
                     </div>
                 </div>
                 <div class="d-flex justify-content-center">
-                    <div class="d-flex position-relative border-radius-24 mt-48 max-w-888 w-100">
+                    <div class="d-flex position-relative border-radius-24 mt-48 max-w-888 w-100" data-aos="zoom-in"
+                        data-aos-duration="2000">
                         <img src="./assets/image/png/sec5-img.png" alt="sec5-img" class="w-100">
                         <span class="top-50 start-50 play-icon position-absolute d-grid cursor-pointer">
                             <svg width="20" height="23" viewBox="0 0 20 23" fill="none"
@@ -651,9 +673,9 @@
                 </div>
             </div>
             <img src="./assets/image/png/sec5-cloud-bottom.png" alt="sec5-cloud-bottom"
-                class="position-absolute start-0 bottom-65">
-            <img src="./assets/image/png/sec5-cloud-top.png" alt="sec5-cloud-top"
-                class="position-absolute top-40 end-0">
+                class="position-absolute start-0 bottom-65" data-aos="fade-right" data-aos-duration="2000">
+            <img src="./assets/image/png/sec5-cloud-top.png" alt="sec5-cloud-top" class="position-absolute top-40 end-0"
+                data-aos="fade-left" data-aos-duration="2000">
             <img src="./assets/image/png/sec5-cloud-center.png" alt="sec5-cloud-center"
                 class="position-absolute top-46 end-0 d-none d-md-flex translate-middle-y">
         </section>
@@ -662,8 +684,10 @@
             <div class="container position-relative z-1 mb-5 pb-80">
                 <div class="d-flex justify-content-center">
                     <div class="max-w-595 pt-4">
-                        <h2 class="text-center fw-bold font-Raleway fs-6xl lh-2xl mt-75 text-white">Our Blogs</h2>
-                        <p class="fs-base font-Poppins lh-base opacity-70 text-center mt-2 text-white">
+                        <h2 class="text-center fw-bold font-Raleway fs-6xl lh-2xl mt-75 text-white mb-0"
+                            data-aos="fade-up" data-aos-duration="2000">Our Blogs</h2>
+                        <p class="fs-base font-Poppins lh-base opacity-70 text-center mt-16 text-white"
+                            data-aos="fade-up" data-aos-duration="2000">
                             Enim eget lacus vitae egestas mauris. Nibh blandit suspendisse at condimentum semper. Non
                             phasellus fames.
                         </p>
@@ -671,7 +695,7 @@
                 </div>
                 <div class="py-1 position-relative mt-lg-75 mb-5 pb-5">
                     <div class="sec6-slider">
-                        <div class="slider-box3 overflow-hidden">
+                        <div class="slider-box3 overflow-hidden" data-aos="zoom-in" data-aos-duration="2000">
                             <div class="d-flex border-light-black border-radius-top-12 overflow-hidden">
                                 <img src="./assets/image/png/sec6-slider-img1.png" alt="sec6-slider-img1"
                                     class="w-100 ">
@@ -697,7 +721,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="slider-box3 overflow-hidden">
+                        <div class="slider-box3 overflow-hidden" data-aos="zoom-in" data-aos-duration="2000">
                             <div class="d-flex border-light-black border-radius-top-12 overflow-hidden">
                                 <img src="./assets/image/png/sec6-slider-img2.png" alt="sec6-slider-img1"
                                     class="w-100 ">
@@ -723,7 +747,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="slider-box3 overflow-hidden">
+                        <div class="slider-box3 overflow-hidden" data-aos="zoom-in" data-aos-duration="2000">
                             <div class="d-flex border-light-black border-radius-top-12 overflow-hidden">
                                 <img src="./assets/image/png/sec6-slider-img3.png" alt="sec6-slider-img1"
                                     class="w-100 ">
@@ -749,7 +773,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="slider-box3 overflow-hidden">
+                        <div class="slider-box3 overflow-hidden" data-aos="zoom-in" data-aos-duration="2000">
                             <div class="d-flex border-light-black border-radius-top-12 overflow-hidden">
                                 <img src="./assets/image/png/sec6-slider-img1.png" alt="sec6-slider-img1"
                                     class="w-100 ">
@@ -775,7 +799,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="slider-box3 overflow-hidden">
+                        <div class="slider-box3 overflow-hidden" data-aos="zoom-in" data-aos-duration="2000">
                             <div class="d-flex border-light-black border-radius-top-12 overflow-hidden">
                                 <img src="./assets/image/png/sec6-slider-img3.png" alt="sec6-slider-img1"
                                     class="w-100 ">
@@ -826,16 +850,20 @@
             <div class="container position-relative z-1 my-5 pb-3">
                 <div class="d-flex justify-content-center">
                     <div class="max-w-535 pt-4">
-                        <h2 class="text-center fw-bold font-Raleway fs-6xl lh-2xl text-black4">Frequently Asked Questions
+                        <h2 class="text-center fw-bold font-Raleway fs-6xl lh-2xl text-black4 mb-0" data-aos="fade-up"
+                            data-aos-duration="2000">Frequently Asked
+                            Questions
                         </h2>
-                        <p class="fs-base font-Poppins lh-base opacity-70 text-center mt-2 text-black4">
+                        <p class="fs-base font-Poppins lh-base opacity-70 text-center mt-16 text-black4"
+                            data-aos="fade-up" data-aos-duration="2000">
                             Lorem ipsum dolor sit amet consectetur. Orci augue mollis eu volutpat mi leo. Nibh nisl
                             consequat metus.
                         </p>
                     </div>
                 </div>
                 <div class="d-flex flex-column align-items-center mt-60">
-                    <div class="accordion1 w-100 position-relative overflow-hidden accordion-active">
+                    <div class="accordion1 w-100 position-relative overflow-hidden accordion-active" data-aos="fade-up"
+                        data-aos-anchor-placement="top-center">
                         <div
                             class="accordion-heading  bg-white  position-relative z-1 p-24 d-flex justify-content-between align-items-center cursor-pointer">
                             <h2 class="font-Raleway m-0 fw-medium text-black fs-base lh-sm opacity-70">Pretium amet
@@ -857,7 +885,8 @@
                             </p>
                         </div>
                     </div>
-                    <div class="accordion1 w-100 mt-18 position-relative overflow-hidden">
+                    <div class="accordion1 w-100 mt-18 position-relative overflow-hidden" data-aos="fade-up"
+                        data-aos-anchor-placement="top-center">
                         <div
                             class="accordion-heading  bg-white  position-relative z-1 p-24 d-flex justify-content-between align-items-center cursor-pointer">
                             <h2 class="font-Raleway m-0 fw-medium text-black fs-base lh-sm opacity-70">Ultrices dui eget
@@ -879,7 +908,8 @@
                             </p>
                         </div>
                     </div>
-                    <div class="accordion1 w-100 mt-18 position-relative overflow-hidden">
+                    <div class="accordion1 w-100 mt-18 position-relative overflow-hidden" data-aos="fade-up"
+                        data-aos-anchor-placement="top-center">
                         <div
                             class="accordion-heading  bg-white  position-relative z-1 p-24 d-flex justify-content-between align-items-center cursor-pointer">
                             <h2 class="font-Raleway m-0 fw-medium text-black fs-base lh-sm opacity-70">Scelerisque
@@ -901,7 +931,8 @@
                             </p>
                         </div>
                     </div>
-                    <div class="accordion1 w-100 mt-18 position-relative overflow-hidden">
+                    <div class="accordion1 w-100 mt-18 position-relative overflow-hidden" data-aos="fade-up"
+                        data-aos-anchor-placement="top-center">
                         <div
                             class="accordion-heading  bg-white  position-relative z-1 p-24 d-flex justify-content-between align-items-center cursor-pointer">
                             <h2 class="font-Raleway m-0 fw-medium text-black fs-base lh-sm opacity-70">Enim ipsum nulla
@@ -923,7 +954,8 @@
                             </p>
                         </div>
                     </div>
-                    <div class="accordion1 w-100 mt-18 position-relative overflow-hidden">
+                    <div class="accordion1 w-100 mt-18 position-relative overflow-hidden" data-aos="fade-up"
+                        data-aos-anchor-placement="top-center">
                         <div
                             class="accordion-heading  bg-white  position-relative z-1 p-24 d-flex justify-content-between align-items-center cursor-pointer">
                             <h2 class="font-Raleway m-0 fw-medium text-black fs-base lh-sm opacity-70">Sit egestas
@@ -948,15 +980,18 @@
                 </div>
                 <div class="d-flex justify-content-center mt-60">
                     <div class="max-w-679 pt-1">
-                        <h2 class="text-center fw-bold font-Raleway fs-6xl lh-2xl text-black4 mt-75">Ready To Get
+                        <h2 class="text-center fw-bold font-Raleway fs-6xl lh-2xl text-black4 mt-75 mb-0"
+                            data-aos="fade-up" data-aos-duration="2000">Ready To Get
                             Started?</h2>
-                        <p class="fs-base font-Poppins lh-base opacity-70 text-center mt-2 text-black4">
+                        <p class="fs-base font-Poppins lh-base opacity-70 text-center mt-16 text-black4"
+                            data-aos="fade-up" data-aos-duration="2000">
                             Ac amet tortor blandit faucibus praesent ultrices tempus sit mattis. Auctor quis amet
                             parturient tempor augue enim cras
                             lacus. Sem turpis.
                         </p>
                         <form id="form-email" method="get"
-                            class="d-flex align-items-center justify-content-center mt-32 p-2 flex-wrap">
+                            class="d-flex align-items-center justify-content-center mt-32 p-2 flex-wrap"
+                            data-aos="fade-up" data-aos-anchor-placement="top-center">
                             <div class="d-flex input-box w-100">
                                 <input type="email" placeholder="Youremailhere@domain.com"
                                     class="input-email bg-white w-100 font-Inter fw-normal fs-base lh-base text-black-primary opacity-60"
@@ -1037,7 +1072,7 @@
                 <div class="col-lg-4 col-12">
                     <div class="row">
                         <div class="col-lg-5 mt-24 col-6">
-                            <h2 class="fw-normal fs-base lh-base text-white font-Poppins">Quick links</h2>
+                            <h2 class="fw-normal fs-base lh-base text-white font-Poppins mb-0">Quick links</h2>
                             <div class="mt-16 d-flex flex-column">
                                 <a href="#footer1"
                                     class="fw-normal fs-base lh-base text-white font-Poppins opacity-70 w-fit">Home</a>
@@ -1053,7 +1088,7 @@
                             </div>
                         </div>
                         <div class="col-lg-7 mt-24 col-6">
-                            <h2 class="fw-normal fs-base lh-base text-white font-Poppins">Legal</h2>
+                            <h2 class="fw-normal fs-base lh-base text-white font-Poppins mb-0">Legal</h2>
                             <div class="mt-16 d-flex flex-column">
                                 <a href="#footer1"
                                     class="fw-normal fs-base lh-base text-white font-Poppins opacity-70">Terms and
@@ -1070,9 +1105,35 @@
             <p class="text-center font-Poppins fw-normal text-white lh-base fs-base opacity-70 mt-24 mb-0">@ All Rights
                 Reserved 2024 Sherpa Property Management</p>
         </div>
+        <span class="scrolltop position-fixed cursor-pointer">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="30"
+                height="30" viewBox="0 0 256 256" xml:space="preserve">
+
+                <defs>
+                </defs>
+                <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;"
+                    transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)">
+                    <path
+                        d="M 7.161 90 c -1.792 0 -3.583 -0.684 -4.95 -2.05 c -2.734 -2.734 -2.734 -7.166 0 -9.9 L 35.262 45 L 2.211 11.95 c -2.734 -2.733 -2.734 -7.166 0 -9.899 c 2.733 -2.733 7.166 -2.733 9.899 0 l 38 38 c 2.733 2.733 2.733 7.166 0 9.9 l -38 38 C 10.744 89.316 8.953 90 7.161 90 z"
+                        style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"
+                        transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                    <path
+                        d="M 44.839 90 c -1.792 0 -3.583 -0.684 -4.95 -2.05 c -2.734 -2.734 -2.734 -7.166 0 -9.9 L 72.939 45 l -33.05 -33.05 c -2.734 -2.733 -2.734 -7.166 0 -9.899 c 2.733 -2.732 7.166 -2.733 9.9 0 l 38 38 c 2.733 2.733 2.733 7.166 0 9.9 l -38 38 C 48.422 89.316 46.63 90 44.839 90 z"
+                        style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;"
+                        transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                </g>
+            </svg>
+        </span>
+        <div class="preloader position-fixed top-0 start-0 min-vh-100 w-100 bg-black">
+            <div class="preloader-img position-relative d-flex flex-column">
+                <img src="./assets/image/svg/footer-logo.svg" alt="footer-logo">
+            </div>
+        </div>
         <img src="./assets/image/png/sec7-bg-img.png" alt="sec7-bg-img"
             class="position-absolute top-0 start-0 w-100 h-100">
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
