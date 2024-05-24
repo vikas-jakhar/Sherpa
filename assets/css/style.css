@@ -778,18 +778,20 @@
     display: grid;
 }
 
-.preloader-img{
+.preloader-img {
     animation: 2s preloaderimg infinite linear;
 }
 
 @keyframes preloaderimg {
-    0%{
+    0% {
         transform: translateY(0);
     }
-    50%{
+
+    50% {
         transform: translateY(-50px);
     }
-    100%{
+
+    100% {
         transform: translateY(0);
     }
 }
@@ -881,6 +883,12 @@
 
     .pt-lg-115 {
         padding-top: 115px !important;
+    }
+}
+
+@media (max-width:992px) {
+    .overflow-lg-hidden {
+        overflow: hidden !important;
     }
 }
 

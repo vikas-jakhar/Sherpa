@@ -8,7 +8,7 @@ menuicon.addEventListener("click", function () {
     menulist.classList.toggle("show");
     menuicon.classList.toggle("active");
     menuicon.classList.toggle("not-active");
-    body.classList.toggle("overflow-hidden");
+    body.classList.toggle("overflow-lg-hidden");
 });
 
 var navheading = document.querySelectorAll(".nav-heading");
@@ -18,7 +18,7 @@ navheading.forEach((e) => {
         menulist.classList.toggle("show");
         menuicon.classList.toggle("active");
         menuicon.classList.toggle("not-active");
-        body.classList.toggle("overflow-hidden");
+        body.classList.toggle("overflow-lg-hidden");
     });
 });
 
