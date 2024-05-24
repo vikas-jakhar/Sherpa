@@ -157,3 +157,14 @@ function toggleScroll1() {
 document.body.scrollTop = document.documentElement.scrollTop = 0;
 
 window.addEventListener("scroll", toggleScroll1);
+
+let menu = document.querySelector(".menu");
+let scrollpt = 700;
+
+window.addEventListener("scroll", function () {
+    if (window.scrollY > scrollpt) {
+        menu.classList.add("shadow1");
+    } else {
+        menu.classList.remove("shadow1");
+    }
+});

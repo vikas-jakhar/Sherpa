@@ -114,6 +114,10 @@
     opacity: 100%;
 }
 
+.shadow1 {
+    box-shadow: 0 0 10px var(--color-black);
+}
+
 /* menu-icon--menu-list */
 
 .menu-icon {
@@ -736,7 +740,7 @@
     transition: all 300ms linear;
 }
 
-.footer-icon:hover{
+.footer-icon:hover {
     box-shadow: 0 0 10px var(--color-white-primary);
 }
 
