@@ -1,4 +1,4 @@
-AOS.init({once:true});
+AOS.init({ once: true });
 
 let menuicon = document.querySelector(".menu-icon");
 let menulist = document.querySelector(".menu-list");
@@ -133,7 +133,10 @@ const preloader = document.querySelector(".preloader");
 
 preloader.style.display = "grid";
 
+body.classList.add("overflow-hidden");
+
 setTimeout(() => {
+    body.classList.remove("overflow-hidden");
     preloader.style.display = "none"
 }, 1000);
 
