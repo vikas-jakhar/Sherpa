@@ -969,11 +969,14 @@
         width: 25px;
         height: 25px;
     }
-    .my-lg-150{
+
+    .my-lg-150 {
         margin-top: 150px !important;
         margin-bottom: 150px !important;
     }
-    .section-3{
+
+    .section-3,
+    .section-5 {
         background-size: 100% 100%;
     }
 }
@@ -1033,7 +1036,8 @@
         padding-top: 200px !important;
     }
 
-    .section-5,.section-3 {
+    .section-5,
+    .section-3 {
         background-size: 100% 100%;
     }
 }
